@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://waws-prod-dm1-003.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>06/26/2020 22:15:50</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>06/26/2020 22:27:00</publishTime>
+    </File>
+    <File Include="BouncyCastle.Crypto.dll">
+      <publishTime>05/28/2018 16:12:20</publishTime>
+    </File>
+    <File Include="CoreProject.deps.json">
+      <publishTime>07/09/2020 02:13:05</publishTime>
+    </File>
+    <File Include="CoreProject.dll">
+      <publishTime>07/09/2020 02:09:44</publishTime>
+    </File>
+    <File Include="CoreProject.exe">
+      <publishTime>07/09/2020 02:09:44</publishTime>
+    </File>
+    <File Include="CoreProject.pdb">
+      <publishTime>07/09/2020 02:09:44</publishTime>
+    </File>
+    <File Include="CoreProject.runtimeconfig.json">
+      <publishTime>07/09/2020 01:22:30</publishTime>
+    </File>
+    <File Include="CoreProject.Views.dll">
+      <publishTime>07/09/2020 02:09:56</publishTime>
+    </File>
+    <File Include="CoreProject.Views.pdb">
+      <publishTime>07/09/2020 02:09:56</publishTime>
+    </File>
+    <File Include="Google.Protobuf.dll">
+      <publishTime>08/10/2018 18:51:54</publishTime>
+    </File>
+    <File Include="K4os.Compression.LZ4.dll">
+      <publishTime>07/03/2019 22:59:30</publishTime>
+    </File>
+    <File Include="K4os.Compression.LZ4.Streams.dll">
+      <publishTime>07/03/2019 22:59:30</publishTime>
+    </File>
+    <File Include="K4os.Hash.xxHash.dll">
+      <publishTime>07/03/2019 20:39:02</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>11/15/2019 08:38:02</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.HashCode.dll">
+      <publishTime>11/15/2019 08:38:50</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>12/14/2019 20:11:16</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>12/14/2019 20:11:44</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.dll">
+      <publishTime>12/14/2019 20:11:48</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Abstractions.dll">
+      <publishTime>12/14/2019 18:38:56</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>12/14/2019 18:39:38</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Abstractions.dll">
+      <publishTime>12/14/2019 18:39:06</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.Binder.dll">
+      <publishTime>12/14/2019 18:39:30</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Configuration.dll">
+      <publishTime>12/14/2019 18:39:16</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.Abstractions.dll">
+      <publishTime>12/14/2019 18:39:34</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.DependencyInjection.dll">
+      <publishTime>12/14/2019 18:39:12</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.Abstractions.dll">
+      <publishTime>12/14/2019 18:40:42</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Logging.dll">
+      <publishTime>12/14/2019 18:41:36</publishTime>
+    </File>
+    <File Include="Microsoft.Extensions.Options.dll">
+      <publishTime>12/14/2019 18:39:06</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>07/19/2017 10:01:34</publishTime>
+    </File>
+    <File Include="System.Xml.XPath.XmlDocument.dll">
+      <publishTime>06/11/2016 23:15:02</publishTime>
+    </File>
+    <File Include="Ubiety.Dns.Core.dll">
+      <publishTime>03/17/2020 10:35:10</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/datatables-select.min.css">
+      <publishTime>06/26/2020 22:15:41</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/datatables-select.min.css.map">
+      <publishTime>06/26/2020 22:15:41</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/datatables-select2.min.css">
+      <publishTime>06/26/2020 22:15:41</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/datatables-select2.min.css.map">
+      <publishTime>06/26/2020 22:15:41</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/datatables.min.css">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/datatables.min.css.map">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/datatables2.min.css">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/flag.min.css.map">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/jquery.zmd.hierarchical-display.min.css.map">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/rating.min.css">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/addons/rating.min.css.map">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/bootstrap.min.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/gallery-introtour-ui-min.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/mdb.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/mdb.lite.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/mdb.lite.min.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/mdb.lite.min.css.map">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/mdb.min.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/mdb.min.css.map">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/css/modules/animations-extended.min.css">
+      <publishTime>06/26/2020 22:15:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/modules/animations-extended.min.css.map">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/customJs/BlogJs.js">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/customJs/ContactJS.js">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/customJs/DailyWordJs.js">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/customJs/DisplayBlogJs.js">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/customJs/indexJs.js">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>06/26/2020 22:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/datatables-select.min.js">
+      <publishTime>06/26/2020 22:15:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/datatables-select2.min.js.map">
+      <publishTime>06/26/2020 22:15:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/datatables2.min.js">
+      <publishTime>06/26/2020 22:15:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/datatables2.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/directives.min.js">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/directives.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/flag.min.js">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/flag.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/imagesloaded.pkgd.min.js">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/imagesloaded.pkgd.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/jquery.zmd.hierarchical-display.min.js">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/jquery.zmd.hierarchical-display.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/masonry.pkgd.min.js">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/masonry.pkgd.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/addons/rating.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/BlogJs.js">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.js">
+      <publishTime>06/26/2020 22:15:43</publishTime>
+    </File>
+    <File Include="wwwroot/js/bootstrap.min.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/DisplayBlogJs.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/formToJson.min.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/IndexJs.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/mdb.lite.min.js.map">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/mdb.min.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/mdb.min.js.map">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/modules/animations-extended.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/modules/forms-free.min.js.map">
+      <publishTime>06/26/2020 22:15:46</publishTime>
+    </File>
+    <File Include="wwwroot/js/popper.js">
+      <publishTime>06/26/2020 22:15:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/popper.min.js">
+      <publishTime>06/26/2020 22:15:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>06/26/2020 22:15:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/toast.min.js">
+      <publishTime>06/26/2020 22:15:45</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>06/26/2020 22:15:48</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>06/26/2020 22:15:47</publishTime>
+    </File>
+    <File Include="Zstandard.Net.dll">
+      <publishTime>03/17/2020 10:35:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

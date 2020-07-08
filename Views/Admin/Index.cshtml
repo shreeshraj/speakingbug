@@ -1,0 +1,68 @@
+﻿
+
+@{
+    ViewBag.Title = "Welcome Online Partner";
+}
+@model CoreProject.Models.LoginEntity
+
+<div class="container">
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5" id="LoginForm">
+
+        <p class="h4 mb-4">Sign in</p>
+        <div>
+            <!-- Email -->
+            @Html.TextBoxFor(x => x.UserName, "", new { @class = "form-control mb-4", placeholder = "E-mail" })
+            @Html.ValidationMessageFor(x => x.UserName)
+
+
+            <!-- Password -->
+            @Html.PasswordFor(x => x.Password, new { @class = "form-control mb-4", placeholder = "Password" })
+            @Html.ValidationMessageFor(x => x.Password)
+        </div>
+        <!-- Sign in button -->
+        <input type="button" class="btn btn-primary  my-1" id="btnLogin" value="Sign In" />
+
+    </form>
+    <!-- Default form login -->
+</div>
+@section scripts {
+
+    <script>
+        $(document).ready(function () {
+            
+            $("#btnLogin").click(function () {
+
+                loginUser();
+            });
+        });
+
+
+        function loginUser() {
+
+            if ($("#LoginForm").valid()) {
+                var formData = {};
+                formData.UserName = $("#UserName").val();
+                formData.Password = $("#Password").val();
+                console.log(JSON.stringify(formData));
+                $.ajax({
+                    type: "POST",
+                    url: "/api/AdminApi/LogIn",
+                    data: JSON.stringify(formData),
+
+                    contentType: "application/json; charset=utf-8",
+
+                    success: function (data) {
+                        if (data === true) {
+                            window.location.replace("/Admin/SubmitWord");
+                        }
+
+                    },
+                    fail: function (jqXHR, textStatus) {
+                        alert("Request failed: " + textStatus);
+                    }
+                });
+            }
+        }
+    </script>
+    }

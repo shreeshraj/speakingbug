@@ -1,0 +1,79 @@
+﻿
+
+
+@model CoreProject.Models.PostEntity
+
+<div class="container">
+    <!-- Material form contact -->
+    <div class="card">
+
+        <h5 class="card-header primary-color white-text text-center py-4">
+            <strong>Submit Your Blog</strong>
+        </h5>
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0">
+
+            <!-- Form -->
+            <form class="text-center" style="color: #757575;" id="blogForm">
+
+                <div class="md-form">
+
+
+                    @Html.TextAreaFor(x => x.Title, new { @class = "form-control md-textarea", @rows = "2" })
+                    <label for="Title">Title</label>
+
+                </div>
+                @Html.ValidationMessageFor(x => x.Title)
+                <!--Message-->
+                <div class="md-form">
+                    @Html.TextAreaFor(x => x.Description, new { @class = "form-control md-textarea", @rows = "10" })
+                    <label for="Description">Description</label>
+                </div>
+                @Html.ValidationMessageFor(x => x.Description)
+
+                <!-- Send button -->
+                <input type="button" class="btn  btn-rounded   btn-primary" style="margin-top:10%" id="btnSubmit" value="Send" />
+
+            </form>
+            <!-- Form -->
+
+        </div>
+
+
+
+    </div>
+    <!-- Material form contact -->
+</div>
+@section scripts {
+    <script>
+        $(document).ready(function () {
+
+            $("#btnSubmit").click(function () {
+                addNewPost();
+            });
+        });
+        function addNewPost() {
+
+            if ($("#blogForm").valid()) {
+
+                var blogPost = {};
+                blogPost.Title = $("#Title").val();
+                blogPost.Description = $("#Description").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/api/AdminApi/Blog",
+                    data: JSON.stringify(blogPost),
+                    dataType: "json",
+                    contentType: "application/json",
+                    success: function (res) {
+                        alert(res);
+                    }
+                    
+                });
+            }
+        }
+    </script>
+
+}
+
+

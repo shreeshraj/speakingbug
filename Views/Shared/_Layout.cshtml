@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="~/css/mdb.min.css">
+    <style>
+        #team .card {
+            border: none;
+            background: #ffffff;
+        }
+
+        .frontside {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <!--Navbar-->
+    <div class="container-fluid">
+        <nav class="mb-4 navbar navbar-expand-lg navbar-dark bg-primary cyan">
+            <a class="navbar-brand font-bold" href="/User/Index">Learning Lab</a>
+            <a class="nav-link" style="color:white;" href="/User/Index"><i class="fa fa-home"></i> Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="/User/DailyWord"><i class="fa fa-lightbulb-o"></i> Today's Word</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/User/Blogs"><i class="fa fa-book"></i> Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/User/ContactUs"><i class="fa fa-envelope"></i> Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+    
+            @RenderBody()
+         <!--Loading Starts-->
+    <div class="spinner-border" style="width:5rem; height:5rem;margin-left:47%;display:none;" role="status" id="loading">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <!--Loading Ends-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-primary" id="footer">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a href="#"> Reserved by Learning </a>
+            <a class="social-icon" style="padding:0.5%;" target="_blank" href=""><i class="fa fa-twitter fa-lg"></i> </a>
+            <a class="social-icon" style="padding:0.5%;" target="_blank" href=""><i class="fa fa-facebook-square fa-lg"></i> </a>
+            <a class="social-icon" style="padding:0.5%;" target="_blank" href=""><i class="fa fa-telegram fa-lg"></i> </a>
+            <a class="social-icon" style="padding:0.5%;" target="_blank" href=""><i class="fa fa-instagram fa-lg"></i> </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+     <!-- jQuery -->
+    <script type="text/javascript" src="~/js/jquery.min.js"></script>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+
+    <script src="~/js/jquery.validate.min.js"></script>
+    <script src="~/js/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="text/javascript" src="~/js/mdb.min.js"></script>
+    @RenderSection("Scripts", required: false)
+     <!--Modal: modalRelatedContent-->
+    <div class="modal fade right" id="modalRelatedContent" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-side modal-bottom-right modal-notify modal-primary" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header" style="padding:5px;">
+                   <p class="heading">Message</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body" style="padding:0px;">
+
+                    <div class="row">
+                        <div class="col-12" id="lblMessage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: modalRelatedContent-->
+</body>
+</html>
